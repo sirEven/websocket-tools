@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0", "websocket-client"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "websocket-tools"
+version = "0.0.7"
+authors = [
+  { name="sir even", email="sir_even@icloud.com"},
+]
+description = "A simple package to wrap web socket connection code."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
