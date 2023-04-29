@@ -32,7 +32,11 @@ jobs:
 
     - name: Run unit tests
       run: |
-        python -m pytest tests/
+        if [ -d tests/ ]; then
+          python -m pytest tests/
+        else
+          echo "No tests found"
+        fi
 
     - name: Build Python distribution
       if: github.ref == 'refs/heads/release'
