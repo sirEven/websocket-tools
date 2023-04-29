@@ -1,16 +1,17 @@
 import websocket
 
+
 class WebsocketLoop:
     def __init__(
         self,
-        bot_id: str,
+        id: str,
         socket_host,
         on_open,
         on_message,
         on_error,
         on_close,
     ):
-        self.bot_id = bot_id
+        self.id = id
         self.socket_host = socket_host
         self.on_open = on_open
         self.on_message = on_message
