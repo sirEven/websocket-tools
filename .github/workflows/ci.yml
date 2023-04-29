@@ -7,10 +7,8 @@ on:
       - release
 
 jobs:
-  deploy:
-    permissions:
+  permissions:
       id-token: write
-      
   test:
     runs-on: ubuntu-latest
 
