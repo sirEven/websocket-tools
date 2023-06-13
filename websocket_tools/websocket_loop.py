@@ -31,4 +31,5 @@ class WebsocketLoop:
         self.ws.run_forever()
 
     def terminate(self):
-        self.ws.close()
+        if self.ws is not None:
+            self.ws.close()
